@@ -2,24 +2,37 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-<title>自己紹介</title>
+<title>自己紹介(後期プロジェクト、最終課題）</title>
 <link rel="stylesheet" href="mystyle.css">
   <script src="myjs.js"></script><!--この行を追加-->
+  <script src="nazo.js"></script>
+  <script src="sonobe.js"></script>
+  <script src="sonobe2.js"></script>
+  <script src="ryouri.js"></script>
 </head>
 <body>
   <h1>
-    自己紹介
+    自己紹介（最終課題）
   </h1>
+  <p>
+    ▶をクリックすると詳しいことがわかるよ！
+  </p>
   <h2>
     名前(ふりがな)
   </h2> 
   <caption>
       <details>
         <summary>薗部花実（そのべ　はるみ） </summary>
+        <div id="image1">
+          <input type="button" value="写真を変える" onclick="imgchange1();">
+        <img src='./image/ESPJ6373.JPG' width="400" height="200" id="logo" alt="幼少期">
+        </div>
+          <input type="button" value="元に戻す" onclick="imgchange2();">
+        </div>
         <p>最後には花が実るようにということで花実という名前になりました。
   </p>
         <p>
-          初対面の人には、よく、「はなみ」と間違えられます。
+          初対面の人には、よく、「はなみ」と間違えられます🌷
         </p>
       </details>
     </caption>
@@ -41,15 +54,29 @@
   <h2>
     出身地
   </h2>
-  <a href="http://www.pref.tochigi.lg.jp"><img src="./image/totimarukunn.png"></a><br>写真をクリックしてみて！
+  <a href="http://www.pref.tochigi.lg.jp"><img src="./image/totimarukunn.png"></a><br>とちまるくんをクリックすると栃木県について知ることができるよ！
 
     <caption>
       <details>
         <summary> 栃木県</summary>
         <p> 栃木県は自然が豊かでとても住みやすいところです。</p>
-    <p>私の住む「那須塩原市」は都会ではありませんが、観光スポットや自然がたくさんあって素晴らしい場所です。</p>
+        <p>私の住む<a href="http://www.city.nasushiobara.lg.jp/">「那須塩原市」</a>は都会ではありませんが、観光スポットや自然がたくさんあって素晴らしい場所です。</p>
         <p>ぜひ、興味があったら一度訪れてみてくださいね！</p>
-  </p>
+  
+      
+      <p>
+        ーーーーー栃木県では「イチゴ🍓」が有名ですが、何科の植物でしょう？ーーーーー
+     <p>
+       ３つの中から選んでね！
+      </p>
+      <p>
+        バラ科・イチゴ科・ウリ科
+      </p>  
+      <p>答え:<input type="text" id="answer">
+        <input type="button" value="解答" onclick="nazo();">
+      </p>
+      </p>
+      
       </details>
     </caption>
 
@@ -63,11 +90,16 @@
   大学に来て、一人映画に行くことにはまっています。
   </p>
   <p>
-    寮生活を初めて料理をするようになりました。
+    寮生活を初めてから料理をするようになりました。
   </p>
   <p>
-    得意料理はハンバーグです。
+    得意料理は
   </p>
+        <form name="timer2">
+      <input type="button" value="スタート" onclick="hyoji2()">
+      <br>
+      <input type="text" name="moji2" size="30" value="">
+    </form>
 </details>
     </caption>
  
@@ -82,6 +114,7 @@
   <p> 始めたきかっけは、小学校の部活動にソフトボール部しかなかったため入部しました。</p>
   <p>ここまで続けていることは本当にすごいことだなと思う反面、驚いています。
   </p>
+  
 </details>
     </caption>
     
@@ -89,7 +122,10 @@
   
   <a href="softball.html" target="_blank">ソフトボール部の紹介</a>
   <h1>
-    ～THANK YOU!!～
+    <marquee scrollamount="30" truespeed>～THANK YOU!!～</marquee>
+
+
   </h1>
+
     </body>
 </html>
